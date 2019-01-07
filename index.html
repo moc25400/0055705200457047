@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>首頁</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.responsivemenu.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            jQuery('#camera_wrap').camera({
+                loader: false,
+                pagination: false,
+                thumbnails: false,
+                height: '45%',
+                caption: false,
+                navigation: true,
+                fx: 'simpleFade'
+            });
+        });
+
+        $(window).load(
+            function () {
+                $('.carousel1').carouFredSel({
+                    auto: false, prev: '.prev1', next: '.next1', width: 940, items: {
+                        visible: {
+                            min: 1,
+                            max: 1
+                        },
+                        height: 'auto',
+                        width: 940,
+
+                    }, responsive: true,
+
+                    scroll: 1,
+
+                    mousewheel: false,
+
+                    swipe: { onMouse: true, onTouch: true }
+                });
+
+            });
+
+
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container_12">
+            <div class="grid_12">
+                <h1><a href="index.html"><img src="images/logo.png" alt="Prospect best opportunity to succeed"></a> </h1>
+                <div class="menu_block">
+                    <nav>
+                        <ul class="sf-menu">
+                            <li class="current"><a href="index.html">首頁</a></li>
+                            <li>
+                                <a href="index-1.html">第一篇</a>
+                                <ul>
+                                    <li><a href="index-5.html">第二篇</a>
+                                    <li><a href="index-6.html">第三篇</a>
+                                    <li><a href="index-7.html">第四篇</a>
+                                    <li><a href="index-8.html">第五篇</a>
+                                    <li><a href="index-9.html">第六篇</a>
+                                </ul>
+                            </li>
+                            <li><a href="index-3.html">養貓新手上路</a> </li>
+                            <li><a href="pazzle.html">貓咪拼圖遊戲</a> </li>
+                        </ul>
+                    </nav>
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="clear"></div>
+    <div class="bg1">
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="slider_wrapper">
+                    <div>
+                        <div id="camera_wrap" class="">
+                            <div data-src="images/slide.jpg">
+                                <div class="caption fadeIn">
+                                </div>
+                            </div>
+                            <div data-src="images/slide1.jpg">
+                                <div class="caption fadeIn">
+                                </div>
+                            </div>
+                            <div data-src="images/slide2.jpg">
+                                <div class="caption fadeIn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page1_block">
+            <div class="container_12">
+                <img src="catt.png">
+                <div class="grid_3">
+                    <div class="box ic1 ">
+                        <div class="maxheight">
+                            <h3>三色貓</h3>
+                            <p>又叫三毛貓、玳瑁貓，也有的人稱呼它三花貓，指黑色、橘色與白色共存在身上的貓，亦稱為玳瑁色。</p>
+                            <a target="_blank" href="https://zh.wikipedia.org/wiki/%E4%B8%89%E8%89%B2%E8%B2%93" class="btn">更多介紹</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_3">
+                    <div class="box ic2">
+                        <div class="maxheight">
+                            <h3>埃及貓</h3><p>唯一天然豹紋的家貓。埃及貓的皮膚和毛色上都有像豹的斑紋。</p>
+                            <a target="_blank" href="https://zh.wikipedia.org/wiki/%E5%9F%83%E5%8F%8A%E8%B2%93" class="btn">更多介紹</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_3">
+                    <div class="box ic3">
+                        <div class="maxheight">
+                            <h3>美國短毛貓</h3><p>祖先為歐洲早期移民帶到北美的貓種，與英國短毛貓和歐洲短毛貓同類。</p>
+                            <a target="_blank" href="https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%9B%BD%E7%9F%AD%E6%AF%9B%E7%8C%AB" class="btn">更多介紹</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_3">
+                    <div class="box ic4">
+                        <div class="maxheight">
+                            <h3>布偶貓</h3><p>擁有柔軟而修長的毛，性子溫順、抱起來就好像柔軟的布偶一般。</p>
+                            <a target="_blank" href="https://zh.wikipedia.org/wiki/%E5%B8%83%E5%81%B6%E8%B2%93" class="btn">更多介紹</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="container_12 car">
+            <div class="grid_12">
+                <h3><span>更多貓貓</span></h3>
+                <div class="carousel_wrapper">
+                    <ul class="carousel1">
+                        <li>
+                            <p>~貓咪品種介紹以及照顧重點，37種一次滿足~</p>
+                            <a target="_blank" href="http://blog.petopia.cc/2016/12/02/%E8%B2%93%E8%80%81%E5%A4%A7%E5%93%81%E7%A8%AE%E4%BB%8B%E7%B4%B9%E4%BB%A5%E5%8F%8A%E7%85%A7%E9%A1%A7%E9%87%8D%E9%BB%9E%EF%BC%8C36%E7%A8%AE%E4%B8%80%E6%AC%A1%E6%BB%BF%E8%B6%B3/" class="btn">貓貓貓貓貓</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div></div>
+
+    <div class="container_12">
+        <div class="grid_12">
+            <footer>
+                <div class="socials">
+                    <a target="_blank" href="https://www.ntou.edu.tw/">國立台灣海洋大學</a> |
+                    <a target="_blank" href="mailto:binwong112@gmail.com"><u>連絡站長</u></a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://drive.google.com/file/d/1PXKHHGb3-cC6JXLZrE3x3XgTjod8DcUP/view?usp=sharing">說明文件</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
